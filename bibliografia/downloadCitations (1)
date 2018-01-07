@@ -1,0 +1,50 @@
+TY  - JOUR
+TI  - New antiwindup PI controller for variable-speed motor drives
+T2  - IEEE Transactions on Industrial Electronics
+SP  - 445
+EP  - 450
+AU  - Hwi-Beon Shin
+PY  - 1998
+KW  - PWM invertors
+KW  - angular velocity control
+KW  - induction motor drives
+KW  - machine control
+KW  - two-term control
+KW  - variable speed drives
+KW  - PI gains
+KW  - PWM voltage-source inverter
+KW  - antiwindup PI controller
+KW  - control performance improvement
+KW  - fast settling time
+KW  - integral state
+KW  - operating speed command change
+KW  - performance degradation
+KW  - proportional-integral controller output
+KW  - pulsewidth modulation
+KW  - saturated PI controller output
+KW  - small overshoot
+KW  - speed response
+KW  - variable-speed motor drives
+KW  - vector-controlled induction motor
+KW  - windup phenomenon
+KW  - Degradation
+KW  - Induction motors
+KW  - Motor drives
+KW  - Pi control
+KW  - Proportional control
+KW  - Pulse inverters
+KW  - Pulse width modulation inverters
+KW  - Velocity control
+KW  - Voltage control
+KW  - Windup
+DO  - 10.1109/41.679002
+JO  - IEEE Transactions on Industrial Electronics
+IS  - 3
+SN  - 0278-0046
+VO  - 45
+VL  - 45
+JA  - IEEE Transactions on Industrial Electronics
+Y1  - Jun 1998
+ER  - 
+
+

@@ -1,0 +1,47 @@
+TY  - CONF
+TI  - An introduction to event-triggered and self-triggered control
+T2  - 2012 IEEE 51st IEEE Conference on Decision and Control (CDC)
+SP  - 3270
+EP  - 3285
+AU  - W. P. M. H. Heemels
+AU  - K. H. Johansson
+AU  - P. Tabuada
+PY  - 2012
+KW  - actuators
+KW  - embedded systems
+KW  - process control
+KW  - sampled data systems
+KW  - sampling methods
+KW  - sensors
+KW  - state feedback
+KW  - actuation control
+KW  - actuation instance
+KW  - control computation
+KW  - control strategy
+KW  - event-triggered control
+KW  - output feedback
+KW  - process industry
+KW  - resource-constrained wireless embedded control system
+KW  - sampled-data control
+KW  - self-triggered control
+KW  - sensor computation
+KW  - sensor sampling
+KW  - state feedback
+KW  - wireless communication technology
+KW  - Actuators
+KW  - Closed loop systems
+KW  - Feedback control
+KW  - Lyapunov methods
+KW  - Observers
+KW  - Wireless communication
+DO  - 10.1109/CDC.2012.6425820
+JO  - 2012 IEEE 51st IEEE Conference on Decision and Control (CDC)
+IS  - 
+SN  - 0191-2216
+VO  - 
+VL  - 
+JA  - 2012 IEEE 51st IEEE Conference on Decision and Control (CDC)
+Y1  - 10-13 Dec. 2012
+ER  - 
+
+

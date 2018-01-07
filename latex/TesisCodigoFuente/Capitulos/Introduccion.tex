@@ -1,0 +1,61 @@
+\chapter{Introducción}%\label{chapter_intro}
+El presente trabajo de grado ha sido realizado con el {\em Grupo de Investigaci\'on en Sistemas Inteligentes de la Universidad T\'ecnica del Norte U (GISI-UTN)}.
+\section{Motivación}
+En [6] se presenta una comparación entre técnicas de control periódico y aperiódico, se concluye que el siguiente paso importante es validar estas técnicas en aplicaciones prácticas y encontrar nuevas preguntas y teorías de investigación. \\
+
+En [7] se realiza la implementación de un control auto disparado en un sistema de primer orden en donde los resultados experimentales se alinean con los de la teoría.\\
+
+En [8] se realiza  una guía para implementar  controladores auto-disparados y se presenta al control no periódico como una alternativa de eficiencia en el consumo de recursos.\\
+%Problem and Its Background
+
+ 
+\section{Objetivos}
+
+\subsection{Objetivo Principal}
+			\begin{itemize}
+			\item Desarrollar un controlador de posición basado en técnicas de control aperiódico para un servomotor.
+			\end{itemize}
+				 
+\subsection{Objetivos Espec\'ificos}
+			\begin{itemize}
+			\item   Investigar el estado del arte de técnicas de control aperiódico para seleccionar una y aplicarla en el control de posición de un servomotor.
+			\item	Identificar la función de transferencia del mecanismo a controlar utilizando software numérico.
+			\item	Diseñar el controlador de posición aperiódico  
+			\item	Implementar el controlador de posición sobre un microcontrolador, con su respectivo análisis de resultados.
+			\end{itemize} 
+			
+\section{Antecedentes}
+
+En [6] se presenta una comparación entre técnicas de control periódico y aperiódico, se concluye que el siguiente paso importante es validar estas técnicas en aplicaciones prácticas y encontrar nuevas preguntas y teorías de investigación.\\ 
+
+En [7] se realiza la implementación de un control auto disparado en un sistema de primer orden en donde los resultados experimentales se alinean con los de la teoría.\\
+
+En [8] se realiza  una guía para implementar  controladores auto-disparados y se presenta al control no periódico como una alternativa de eficiencia en el consumo de recursos.\\
+
+
+\section{Problema}
+
+1.	Problema 
+Servomecanismos tales como servomotores son muy usados en ingeniería mecatrónica por tener la habilidad de localizar una posición en un rango de operación y permanecer estables en ella. Un servomotor es un dispositivo electromecánico usado para controlar el movimiento y posición exacta de una carga. Una referencia de posición es comparada con la posición actual del servomotor para ser corregida automáticamente[1]. Actualmente los servomotores son escogidos para desarrollar sistemas mecatrónicos compactos y no costosos [2].  Por ejemplo, los robots y también las máquinas de control numérico utilizan servomotores para mover rápidamente y con precisión un efector final (herramienta) hacia una posición deseada [1].'\\
+
+Para controlar la posición de motores DC es dominante el eso del controlador PID convencional por ser sencillo y fácil de implementar [1]. Esta técnica de control se basa en modelar matemáticamente la dinámica de la planta y diseñar un controlador que garantice el funcionamiento deseado, realizando muestreos periódicos en los sensores de retroalimentación de los estados de la planta [3].\\
+
+Los libros de control como por ejemplo [3]-[5] presentan únicamente técnicas de control periódicas como opción de implementación en plataformas digitales. Sin embargo, se han implementado técnicas de control aperiódico (preferiblemente llamadas control basado en eventos y control auto disparado) en las computadoras [6] . La literatura existente presenta como ventaja principal que al calcular un nuevo muestreo por cada evento de control se reduce el consumo de recursos de red, tiempo de procesamiento y batería [7].\\
+
+Utilizando técnicas de control aperiódico para controlar la posición de un servomotor de bajo torque se puede comparar el consumo de recursos con un control periódico, garantizando el rendimiento adecuado en ambos casos.\\ 
+
+
+
+\section{Justificaci\'on}
+ Par garantizar que un control de lazo cerrado se actualice eficientemente en un período, se necesita rapidez en los microprocesadores, redes con velocidades altas. El control no periódico determina un muestreo y procesamiento óptimo como solución a esta necesidad [8].\\ 
+
+Las técnicas de control por eventos y control auto disparado disminuyen las acciones de control cambiando el tiempo de muestreo al máximo si la planta está inestable y al mínimo si la planta está estable logrando así disminuir el consumo de recursos computacionales, de red, de batería [7].\\\ 
+
+
+\section{Alcance}
+Se implementará un controlador de posición basado en técnicas de control aperiódico, para un servomotor.\\
+
+El servomotor constará de un motor DC, un codificador de cuadratura y una interfaz de potencia. El controlador se implementará sobre un microcontrolador.\\
+
+Se hará la identificación del mecanismo a controlar con software numérico, así como la simulación del nuevo controlador.\\ 
+

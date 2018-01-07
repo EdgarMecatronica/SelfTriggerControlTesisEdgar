@@ -1,0 +1,96 @@
+\usepackage[lmargin=2cm,rmargin=2cm,top=1.5cm,bottom=2cm]{geometry}  %paquete parra margenes 
+\usepackage[T1]{fontenc} %para simbolos  en  español 
+\usepackage[utf8]{inputenc} %para tildes 
+\usepackage[spanish,es-tabla]{babel} %Reconosca espanol y tabla 
+
+\usepackage{amsmath} %simbolos matematicas
+\usepackage{amssymb, amsfonts,latexsym, cancel} %matematicas
+\usepackage{bm} %negritas
+\usepackage{float} % para figuras donde queramos 
+
+\usepackage{fancyhdr}%formato al documento
+\usepackage{epstopdf}%pes a pdf
+\usepackage[colorlinks=true,linkcolor=blue' urlcolor=blue]{hyperref} %para cololoriar link
+\usepackage{longtable} % para  tablas largas
+\setcounter{MaxMatrixCols}{40} %Para  matrices de hasta 40 colunas
+\usepackage{multicol} %varias columnas
+\usepackage{subfigure} %colocar varias figuras
+\usepackage{titling} %  PARA FORMATO DE TITULO 
+\usepackage{anyfontsize}
+
+\usepackage[dvips]{graphicx}
+\usepackage{graphicx}
+%\usepackage[pdftex]{hyperref}
+\usepackage{eurosym}
+\usepackage{array,booktabs}
+\usepackage{enumerate}
+\usepackage{fancyvrb}
+\usepackage{listings}
+\usepackage{amsfonts}
+\usepackage{color}
+\usepackage{multirow}
+
+
+\topmargin -0.1cm
+\headsep 0.5cm 
+\oddsidemargin 0.4cm   % read Lamport p.163
+\evensidemargin -0.4cm  % same as oddsidemargin but for left-hand pages
+\textheight=23.5cm
+\textwidth=16cm
+
+\usepackage{float} %to put table caption on top
+\floatstyle{plaintop}
+\restylefloat{table}
+
+
+\renewcommand{\chaptermark}[1]{\markboth{\textbf{\thechapter. #1}}{}} % Chapter format: N. Name
+\renewcommand{\sectionmark}[1]{\markright{\textbf{\thesection. #1}}} % Section format: N.M. Name
+\setlength{\belowcaptionskip}{6pt}   % 0.5cm as an example
+\lstloadlanguages{[ANSI]C}
+
+% numerate including subsubsection
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{3}
+
+
+\newenvironment{nscenter} %used for lines centering
+ {\parskip=0pt\par\nopagebreak\centering}
+ {\par\noindent\ignorespacesafterend}
+
+
+
+
+\usepackage{color}
+\usepackage{graphicx} % for pdf, bitmapped graphics files
+\usepackage{epsfig} % for postscript graphics files
+\usepackage{mathptmx} % assumes new font selection scheme installed
+\usepackage{times} % assumes new font selection scheme installed
+\usepackage{amsmath} % assumes amsmath package installed
+\usepackage{amssymb}  % assumes amsmath package installed
+\usepackage[percent]{overpic}
+%\usepackage{enumitem}
+\usepackage{stmaryrd}
+
+\DeclareMathOperator*{\argmin}{\mathsf{arg\,min}}
+\DeclareMathOperator*{\argmax}{\mathsf{arg\,max}}
+\DeclareMathOperator*{\superior}{\mathsf{sup}}
+
+\newcommand{\ud}{\mathrm{d}}
+\newcommand{\partder}[2]{\frac{\partial #1}{\partial #2}}
+\newcommand{\deriv}[2]{\frac{\ud #1}{\ud #2}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\dA}{\bar A}
+\newcommand{\dB}{\bar B}
+\newcommand{\dQ}{\bar Q}
+\newcommand{\dR}{\bar R}
+\newcommand{\dS}{\bar S}
+\newcommand{\dP}{\bar P}
+\newcommand{\dK}{\bar K}
+\newcommand{\dW}{\bar W}
+\newcommand{\dL}{\bar L}
+\newcommand{\ceil}[1]{\left\lceil #1 \right\rceil}
+\newcommand{\w}{\omega}
+\newcommand{\tN}{t_N}
+
+\renewcommand{\arraystretch}{0.9} % because \baselinestretch is 1.6667
+\renewcommand{\arraycolsep}{1.2pt}

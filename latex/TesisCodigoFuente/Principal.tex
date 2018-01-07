@@ -1,0 +1,36 @@
+\documentclass[12pt, a4paper, oneside, openright, hidelinks]{report}
+%%%%%%%%%%%%%
+\input{Codigos/Preanbulo}
+
+
+\begin{document}
+\include{Codigos/Portada/Portada}
+
+
+\renewcommand{\thepage}{\roman{page}}
+\include{Codigos/Agradecimiento/Agradecimiento}
+\interfootnotelinepenalty=10000 %Do not allow footpage jump page
+%\tableofcontents
+%\listoffigures
+%\listoftables
+
+%\lstlistoflistings
+
+%% acknoledgment page
+\newpage
+\thispagestyle{empty}
+
+\thispagestyle{empty}
+\cleardoublepage
+
+
+\pagebreak
+\renewcommand{\thepage}{\arabic{page}}
+\setcounter{page}{1}
+
+
+\include{Codigos/Introduccion}
+%\include{Codigos/Cap2.tex}
+%\include{Codigos/Cap3.tex}
+%\include{Codigos/Cap4.tex}
+\end{document}
