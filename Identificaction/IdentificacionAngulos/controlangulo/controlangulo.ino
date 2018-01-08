@@ -6,11 +6,11 @@ int error;
 volatile int actual_angle;
 int pwm;
 int flag=2;
-int x=5,i=0,j=0,k=0;
+int x=5,i=1,j=0,k=0;
 int y=6;
 int salidal;
 volatile char S;
-long timep, time, etime, f=1000000;
+long timep, time, etime, f=0;
 volatile boolean A,B;
 volatile byte state, statep;
 volatile int analogInPin=A0;
@@ -49,11 +49,11 @@ etime=time-timep;
  if (time>= f)
  {
   f=3000000+time;
-  if(i=1)
+  if(i==1)
   {
     order_angle=360;
     i=2;
-    }else if (i=2)
+    }else if (i==2)
           {
              order_angle=0;
              i=1;

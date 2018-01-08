@@ -25,7 +25,7 @@ while i<NumDatos
      i=i+1;
 end
 
- xlswrite('DatosAdquiridos.xlsx',Datos);   
+ xlswrite('AngulosAdquiridos.xlsx',Datos);   
 fclose(canal_serie);
 delete(canal_serie);
 clear canal_serie;
