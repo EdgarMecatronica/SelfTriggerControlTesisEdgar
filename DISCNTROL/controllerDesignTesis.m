@@ -15,9 +15,12 @@ D = 0;
 sys = ss(A_c, B_c, C, D);
 
 %Q_c = 1/(23.8095^2)*eye(size(A_c,1));
-Q_c = [0.0025 0; 0 0.0025];
+% Q_c = [0.0025 0; 0 0.0025];
+Q_c=[1 0;0 1];
+S=[1 0;0 1];
+R_c=[1];
 %R_c = 2/23.8095;
-R_c = 0.1;
+% R_c = 0.1;
 %S = 1e-4*[3, -5; -5, 20];
 
 %% Continuous time controller-gain
@@ -40,8 +43,8 @@ snr = 55; %signal to noise ratio
 %pole2 = -Inf;
  pole1 = -3+2i;
  pole2 = -3-2i;
-% pole1 = -70+10i;
- %pole2 = -70-10i;
+%  pole1 = -70+10i;
+% pole2 = -70-10i;
 % pole1 = -20+5i;
 % pole2 = -20-5i;
 P_c = [pole1, pole2]
