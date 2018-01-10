@@ -1,15 +1,15 @@
 %% TWO-THIRDS CONTROLLER
 clear all, close all, clc,
 
-%%A=[-12.39 -115;
-%     64 0];
-% B=[1;0];
-% C=[0 1.147]
+% A=[-7.446 -5.705;
+%     4 0];
+% B=[2;0];
+% C=[0 2.841]
 % D=[0]
-A_c = [-12.39 -115;
-    64 0]; %dynamic system definition
-B_c = [1;0];
-C = [0 1.147];
+A_c = [-8.052e4 -3.505e04;
+    6.554e04 0]; %dynamic system 'definition
+B_c = [256;0];
+C = [0 136.8];
 D = 0;
 
 sys = ss(A_c, B_c, C, D);
@@ -29,8 +29,8 @@ K_c = lqr(A_c,B_c,Q_c,R_c) %continuous time control gain
 eigenvalues = eig(A_c-B_c*K_c) %stability test
 
 %% Settings
-tau_max = 40e-3;
-tau_min = 10e-3;
+tau_max = 40e-6;
+tau_min = 16e-6;
 granularity = 1e-3;
 beta = 9.4;
 alpha = 0.667;
@@ -99,9 +99,12 @@ b = [B00; B10];
 l = [L00 L01];
 X = [(x00-r); x10];
 
-l*(a+b*l)*X
+R=l*(a+b*l)*X
 
 
 %%
 
 simulation1
+
+%x10*(L00*(A01 + B00*L01) + L01*(A11 + B10*L01)) - (r - x00)*(L00*(A00 + B00*L00) + L01*(A10 + B10*L00))
+ 

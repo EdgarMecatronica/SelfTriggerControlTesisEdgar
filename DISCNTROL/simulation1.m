@@ -8,14 +8,14 @@ history_x = [];
 history_ref = [];
 history_u = [];
 history_time = 0;
-x = [1; 1]; %initial state
+x = [0.01; 0.01]; %initial state
 %x_hat = [0.1; 0.1]; % initial observed states
-reference = 30;
+reference = 1;
 %%
 for n=1:Ns % iterate through time    
     % reference evolution
     if (n>=50)
-        reference = 300;
+        reference = -1;
     end
     history_ref = [history_ref, reference];
     
@@ -45,7 +45,7 @@ grid on, hold on
 plot(history_time(1:Ns), history_x(1,:), history_time(1:Ns),...
     history_x(2,:), history_time(1:Ns), history_ref(1,:),'*',...
     history_time(1:Ns), history_u(1,:),'lineWidth', 2);
-%%xlim([0 history_time(Ns)]), ylim([-1.1 1.4])
+xlim([0 history_time(Ns)]), ylim([-1.1 1.4])
 title('Response')
 xlabel('Time (sec)')
 ylabel('Voltage (V)')
